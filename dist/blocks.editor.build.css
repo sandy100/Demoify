@@ -1,0 +1,11 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like Variables and Mixins.
+  * that are shared between all of your blocks.
+*/
+.editor-block-list__block[data-type="coblocks/alert"] .wp-block-coblocks-alert {
+  margin-bottom: 0; }
+
+.editor-block-list__block[data-type="coblocks/alert"] .wp-block-coblocks-alert__text p {
+  margin-bottom: 0; }
