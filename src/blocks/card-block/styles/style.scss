@@ -1,0 +1,57 @@
+/**
+ * Styles for Card Block.
+ *
+ * CSS for both Editor + Frontend.
+ */
+.dgb-card {
+	border-radius: 0.25em;
+	border: 1px solid rgba(0, 0, 0, .125);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	margin: 25px 0;
+	padding-bottom: 20px;
+
+	&:not(.has-image) {
+		padding-top: 20px;
+	}
+
+	&.has-image {
+		.dgb-card-image-container {
+			height: 275px;
+			width: 100%;
+			margin: 0 auto 10px;
+			background-size: cover;
+			background-position: center;
+			border-radius: 0.25em 0.25em 0 0;
+		}
+	}
+
+	>*:last-child {
+		margin-bottom: 0 !important;
+	}
+
+	>h4,
+	>* {
+		margin: 0 2rem .5rem !important;
+	}
+
+	.wp-dgb-button {
+		margin-top: .5rem !important;
+	}
+
+	.dgb-card-image-container {
+		margin: 0 0 10px !important;
+	}
+
+	.dgb-tagline {
+		opacity: .6;
+	}
+
+	.wp-block-button.dgb-button-center {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	.wp-block-button.dgb-button-right {
+		transform: translateX(-100%) translateX(-60px);
+	}
+}

@@ -1,0 +1,17 @@
+/**
+*
+* CSS for both Editor + Frontend.
+*/
+.dgb-blockquote {
+	font-style: italic;
+	text-align: inherit;
+	background: transparent;
+	border: 0;
+	border-left: 6px solid #007bff;
+	padding: 1rem 1.5rem;
+	margin: 1rem 1.5rem;
+
+	p {
+		margin: 0;
+	}
+}

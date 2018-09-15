@@ -1,5 +1,7 @@
 /**
- * All blocks related JS & CSS.
+ * All blocks are imported here.
  */
 
-import './card-block/index.js';
+import './blocks/card-block/index';
+import './blocks/button-block/index';
+import './blocks/blockquote-block/index';
