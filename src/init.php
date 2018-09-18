@@ -55,12 +55,12 @@ add_action( 'enqueue_block_editor_assets', 'demoify_editor_assets' );
 
 function demoify_frontend_assets() {
 	// Scripts.
-	// wp_enqueue_script(
-	// 	'demoify-block-frontend-js', // Handle.
-	// 	plugins_url( '/dist/blocks.frontend.build.min.js', dirname( __FILE__ ) ), // Block.build.js: We register the block here. Built with Webpack.
-	// 	array( ) // Dependencies, defined above.
-	// 	// filemtime( plugin_dir_path( __FILE__ ) . 'block.js' ) // Version: filemtime — Gets file modification time.
-	// );
+	wp_enqueue_script(
+		'demoify-block-frontend-js', // Handle.
+		plugins_url( '/dist/blocks.frontend.build.js', dirname( __FILE__ ) ), // Block.build.js: We register the block here. Built with Webpack.
+		array( ) // Dependencies, defined above.
+		// filemtime( plugin_dir_path( __FILE__ ) . 'block.js' ) // Version: filemtime — Gets file modification time.
+	);
 
 	// Styles.
 	wp_enqueue_style(

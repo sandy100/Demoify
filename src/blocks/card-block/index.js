@@ -234,7 +234,6 @@ export const edit = ( props ) => {
 			</span>
 		</div>,
 
-
 		isSelected && (
 			<form key={ 'form-link' }
 				onSubmit={ ( event ) => event.preventDefault() }
@@ -358,7 +357,7 @@ registerBlockType( 'dgb/card', {
 			type: 'array',
 			source: 'children',
 			selector: '.dgb-card-des',
-			default: __( 'Sandeep is the React JS developer. He loves programming, and travelling.' ),
+			default: __( 'Sandeep is the React JS developer. He loves programming and traveling.' ),
 		},
 		headingColor: {
 			type: 'string',

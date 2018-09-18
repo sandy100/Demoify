@@ -20,6 +20,7 @@ export const {
 	RichText,
 	URLInput,
 	MediaUpload,
+	DropDownMenu,
 } = wp.editor.InspectorControls ? wp.editor : wp.blocks;
 
 export const {

@@ -56,7 +56,8 @@ const extractConfig = {
 // Export configuration.
 module.exports = {
 	entry: {
-		'./dist/blocks.build': './src/blocks.js', // 'name' : 'path/file.ext'.
+		'./dist/blocks.build': './src/blocks.js',
+		'./dist/blocks.frontend.build': './src/blocks-frontend.js', // 'name' : 'path/file.ext'.
 	},
 	output: {
 		path: path.resolve( __dirname ),
