@@ -18,7 +18,7 @@ To begin using this Demoify - Advanced Gutenberg Blocks plugin, follow the follo
     #For Development Options
     $ gulp run dev
 
-	#For Build Options
-	$ gulp run dev
+    #For Build Options
+    $ gulp run dev
 
 ```
