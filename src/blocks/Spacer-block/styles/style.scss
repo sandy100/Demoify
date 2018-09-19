@@ -1,0 +1,17 @@
+/**
+ * Styles for Spacer Block.
+ *
+ * CSS for both Editor + Frontend.
+ */
+
+
+.wp-block-dgb-spacer {
+	display: flex;
+	align-items: center;
+}
+
+.dgb-spacer-line-true {
+	height: 1px;
+	background: #CCC;
+	width: 100%;
+}
