@@ -1,8 +1,7 @@
 # Demoify
 Demoify is a collection of content blocks for the new Gutenberg block editor. Blocks are chunks of content such as paragraphs, images, Tabs, columns, testimonials, buttons, and more. Demoify blocks give you more control to quickly create and launch any kind of site you want.
 
-#Dev
-
+# Dev
 To begin using this Demoify - Advanced Gutenberg Blocks plugin, follow the following steps:
 
 ```sh
