@@ -40,12 +40,12 @@ export const edit = ( props ) => {
 	const {
 		heading,
 		tagline,
-		des,
+		description,
 		mediaID,
 		mediaURL,
 		headingColor,
 		taglineColor,
-		desColor,
+		descriptionColor,
 		buttonURL,
 		buttonText,
 		buttonColor,
@@ -108,8 +108,8 @@ export const edit = ( props ) => {
 							label: __( 'Tagline Color' ),
 						},
 						{
-							value: desColor,
-							onChange: ( colorValue ) => setAttributes( { desColor: colorValue } ),
+							value: descriptionColor,
+							onChange: ( colorValue ) => setAttributes( { descriptionColor: colorValue } ),
 							label: __( 'Description Color' ),
 						},
 					] }
@@ -203,13 +203,13 @@ export const edit = ( props ) => {
 			/>
 			<RichText
 				tagName={'p'}
-				value={ des }
-				className={ 'dgb-card-des' }
-				onChange={ (text) => setAttributes( { des: text } ) }
-				isSelected={ isSelected && editable === 'des' }
-				onFocus={ onSetActiveEditable( 'des' ) }
+				value={ description }
+				className={ 'dgb-card-description' }
+				onChange={ (text) => setAttributes( { description: text } ) }
+				isSelected={ isSelected && editable === 'description' }
+				onFocus={ onSetActiveEditable( 'description' ) }
 				style={ {
-					color: desColor,
+					color: descriptionColor,
 					textAlign: contentAlign
 				} }
 				keepPlaceholderOnFocus
@@ -259,11 +259,11 @@ export const save = ( props ) => {
 	const {
 		heading,
 		tagline,
-		des,
+		description,
 		mediaURL,
 		headingColor,
 		taglineColor,
-		desColor,
+		descriptionColor,
 		buttonURL,
 		buttonText,
 		buttonColor,
@@ -280,7 +280,7 @@ export const save = ( props ) => {
 	};
 
 	const imageClass = mediaURL ? 'has-image' : ''
-	const displayNone = ( ! heading.length && ! tagline.length && ! des.length && ! buttonText.length ) ? 'has-no-content' : 'has-content'
+	const displayNone = ( ! heading.length && ! tagline.length && ! description.length && ! buttonText.length ) ? 'has-no-content' : 'has-content'
 
 	return (
 		<div className={ `dgb-card ${imageClass} ${displayNone}` }>
@@ -295,9 +295,9 @@ export const save = ( props ) => {
 					{ tagline }
 				</p>
 			) }
-			{ des && !! des.length && (
-				<p className={ 'dgb-card-des' } style={ { color: desColor, textAlign: contentAlign } }>
-					{ des }
+			{ description && !! description.length && (
+				<p className={ 'dgb-card-description' } style={ { color: descriptionColor, textAlign: contentAlign } }>
+					{ description }
 				</p>
 			) }
 			{ buttonText && !! buttonText.length && (
@@ -353,10 +353,10 @@ registerBlockType( 'dgb/card', {
 			selector: '.dgb-tagline',
 			default: __( 'Sandeep is the React JS Developer.' ),
 		},
-		des: {
+		description: {
 			type: 'array',
 			source: 'children',
-			selector: '.dgb-card-des',
+			selector: '.dgb-card-description',
 			default: __( 'Sandeep is the React JS developer. He loves programming and traveling.' ),
 		},
 		headingColor: {
@@ -365,7 +365,7 @@ registerBlockType( 'dgb/card', {
 		taglineColor: {
 			type: 'string',
 		},
-		desColor: {
+		descriptionColor: {
 			type: 'string',
 		},
 		buttonURL: {
