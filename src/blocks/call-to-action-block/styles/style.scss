@@ -1,0 +1,27 @@
+/**
+ * Styles for Call To Action Block.
+ *
+ * CSS for both Editor + Frontend.
+ */
+.dgb-cta {
+	text-align: center;
+	padding: 4rem 2rem;
+	background-color: #f4f4f4;
+
+	.dgb-cta-title {
+		margin: 0 0 1rem !important;
+	}
+
+	.dgb-cta-description {
+		opacity: .5;
+		margin: 0 0 1.5rem;
+	}
+
+	.dgb-cta-button {
+		margin: 0;
+	}
+
+	p {
+		text-align: center;
+	}
+}
