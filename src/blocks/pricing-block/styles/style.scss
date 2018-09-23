@@ -1,0 +1,172 @@
+/**
+ * Styles for Spacer Block.
+ *
+ * CSS for both Editor + Frontend.
+ */
+.dgb-pricing-box {
+	display: flex;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	flex-wrap: wrap;
+
+	>div {
+		text-align: center;
+		margin: 10px;
+		box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px rgba(176, 181, 193, 0.2);
+		border-radius: 10px;
+		min-width: 250px;
+		width: 100%;
+		padding: 4rem 2.5rem;
+		flex: 1;
+
+		p {
+			text-align: center;
+			padding-bottom: 0;
+		}
+	}
+
+	h3 {
+		margin: 0 0 2rem !important;
+		line-height: 100% !important;
+	}
+
+	.dgb-pricing-box-price {
+		font-size: 3.5em;
+		margin: 0 0 .5rem;
+		line-height: 100% !important;
+	}
+
+	.dgb-pricing-box-price-label {
+		font-size: .75em;
+		opacity: 0.8;
+		margin: 0 0 2rem;
+		text-transform: uppercase;
+		line-height: 100% !important;
+	}
+
+	.wp-dgb-button {
+		margin-bottom: 2rem;
+	}
+
+	.dgb-pricing-box-feature-list {
+		font-size: 1em;
+		line-height: 1.8em !important;
+		text-align: left;
+		padding: 0 10px;
+		list-style-type: none !important;
+
+		li {
+			padding: 10px 0;
+
+			&::before {
+				content: "\f345";
+				font-family: Dashicons;
+				vertical-align: top;
+				margin-right: 5px;
+			}
+		}
+	}
+
+}
+
+.blocks-button-inline-link {
+	&.pricing-box {
+		margin: 5px auto 0px auto;
+	}
+}
+
+.dgb-pricing-box.column-1 {
+
+	.dgb-pricing-box-column-two,
+	.dgb-pricing-box-column-three {
+		display: none;
+	}
+}
+
+.dgb-pricing-box.column-2 {
+	.dgb-pricing-box-feature-list {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.dgb-pricing-box-column-one {
+		margin-right: 2rem;
+	}
+
+	.dgb-pricing-box-column-two {
+		border-left: 1px solid #eee;
+		margin-left: 0;
+		padding-left: 2rem;
+	}
+
+	>div {
+		width: 50%;
+	}
+
+	.dgb-pricing-box-column-three {
+		display: none;
+	}
+
+	.blocks-button-inline-link {
+		width: 225px;
+	}
+}
+
+.dgb-pricing-box.column-3 {
+	>div {
+		width: 33.2%;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
+	>div:first-child {
+		margin-left: 0;
+	}
+
+	>div:last-child {
+		margin-right: 0;
+	}
+
+	.dgb-pricing-box-column-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.dgb-pricing-box-feature-list {
+		width: 100%;
+	}
+
+	.blocks-button-inline-link {
+		width: 181px;
+
+		.blocks-url-input {
+			width: 50%;
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.dgb-pricing-box.column-3.column-3 {
+		display: block;
+
+		>div {
+			width: 100%;
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.dgb-pricing-box.column-2.column-2 {
+		display: block;
+
+		>div {
+			width: 100%;
+			margin: 0;
+		}
+	}
+}
