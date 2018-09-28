@@ -34,7 +34,6 @@ export const edit = ( props ) => {
 	} = props;
 
 	const {
-		url,
 		buttonUrlOne,
 		buttonUrlTwo,
 		buttonUrlThree,

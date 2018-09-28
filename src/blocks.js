@@ -14,3 +14,4 @@ import './blocks/call-to-action-block/index';
 import './blocks/pricing-block/index';
 import './blocks/image-box-block/index';
 import './blocks/testimonial-block/index';
+import './blocks/pull-quote-block/index';
