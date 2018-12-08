@@ -5,7 +5,7 @@
  * Description: Demoify is a collection of content blocks for the new Gutenberg block editor. Blocks are chunks of content such as paragraphs, images, Tabs, columns, testimonials, buttons, and more. Demoify blocks give you more control to quickly create and launch any kind of site you want!
  * Author: Sandeep Prasad Bhatt
  * Author URI: http://www.sandeepbhatt.com.np
- * Version: 1.0.0
+ * Version: 1.0.1
  * License: GPL-3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.txt
  *
