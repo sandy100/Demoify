@@ -71,7 +71,27 @@ Nope. Demoify only works with Gutenberg.
 1. Adding a Button Block
 2. Adding a Testimonial Block
 
+== Installation ==
+
+This plugin can be installed directly from your site.
+
+1. Log in and navigate to Plugins → Add New.
+2. Type “Demoify Blocks” into the Search and hit Enter.
+3. Locate the Demoify Blocks – Gutenberg Page Builder plugin in the list of search results and click Install Now.
+4. Once installed, click the Activate link.
+
+It can also be installed manually.
+
+1. Download the Demoify Blocks plugin from WordPress.org.
+2. Unzip the package and move to your plugins directory.
+3. Log into WordPress and navigate to the Plugins screen.
+4. Locate Demoify Blocks in the list and click the Activate link.
+
 == Changelog ==
+
+= 1.0.1 =
+* Small Bug Fixes.
+* Plugin Made Compatible With Wordpress V5.0.0
 
 = 1.0.0 =
 * Initial release.
