@@ -3,7 +3,7 @@ Contributors: bhatt_sandeep
 Donate link: https://demoify.com
 Tags: gutenberg, blocks, demoify,demoify blocks, page builder, gutenberg builder, gutenberg blocks, editor, addon, add on, add-on, gutenberg addon, wordpress 5.0, simple, essential, options, all in one
 Requires at least: 4.8
-Tested up to: 4.9.8
+Tested up to: 5.0
 Requires PHP: 5.3
 Stable tag: 1.0
 License: GPLv3
