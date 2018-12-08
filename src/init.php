@@ -26,23 +26,24 @@ function demoify_editor_assets() {
 	// Load the compiled blocks into the editor.
 	wp_enqueue_script(
 		'demoify-block-js', // Handle.
-		plugins_url( '/dist/blocks.build.js', dirname( __FILE__ ) ), // Block.build.js: We register the block here. Built with Webpack.
-		array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-components', 'wp-editor' ) // Dependencies, defined above.
-		// filemtime( plugin_dir_path( __FILE__ ) . 'block.js' ) // filemtime — Gets file modification time.
+		plugins_url( '/dist/blocks.build.js', DEMOIFY_FILE ), // Block.build.js: We register the block here. Built with Webpack.
+		array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-components', 'wp-editor' ),
+		DEMOIFY_VERSION
 	);
 
 	// Load the compiled styles into the editor.
 	wp_enqueue_style(
 		'demoify-block-editor-css', // Handle.
-		plugins_url( 'dist/blocks.editor.build.css', dirname( __FILE__ ) ), // Block editor CSS.
-		array( 'wp-edit-blocks' ) // Dependency to include the CSS after it.
-		// filemtime( plugin_dir_path( __FILE__ ) . 'blocks.editor.build.css' )
+		plugins_url( 'dist/blocks.editor.build.css', DEMOIFY_FILE ), // Block editor CSS.
+		array( 'wp-edit-blocks' ),
+		DEMOIFY_VERSION
 	);
-} // End function demoify_editor_assets().
-
+}
+// End function demoify_editor_assets().
 
 // Hook: Editor assets.
 add_action( 'enqueue_block_editor_assets', 'demoify_editor_assets' );
+
 
 /**
  * Enqueue assets for frontend
@@ -57,17 +58,17 @@ function demoify_frontend_assets() {
 	// Scripts.
 	wp_enqueue_script(
 		'demoify-block-frontend-js', // Handle.
-		plugins_url( '/dist/blocks.frontend.build.js', dirname( __FILE__ ) ), // Block.build.js: We register the block here. Built with Webpack.
-		array( ) // Dependencies, defined above.
-		// filemtime( plugin_dir_path( __FILE__ ) . 'block.js' ) // Version: filemtime — Gets file modification time.
+		plugins_url( '/dist/blocks.frontend.build.js', DEMOIFY_FILE ), // Block.build.js: We register the block here. Built with Webpack.
+		array(),
+		DEMOIFY_VERSION
 	);
 
 	// Styles.
 	wp_enqueue_style(
-		'demoify-frontend-css', // Handle.
-		plugins_url( 'dist/blocks.style.build.css', dirname( __FILE__ ) ), // Block frontend CSS.
-		array( 'wp-blocks' ) // Dependency to include the CSS after it.
-		// filemtime( plugin_dir_path( __FILE__ ) . 'editor.css' ) // filemtime — Gets file modification time.
+		'demoify-block-frontend-css', // Handle.
+		plugins_url( 'dist/blocks.frontend.build.css', DEMOIFY_FILE ), // Block frontend CSS.
+		array('wp-edit-blocks'),
+		DEMOIFY_VERSION
 	);
 } // End function demoify_frontend_assets().
 

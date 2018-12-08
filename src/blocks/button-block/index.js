@@ -106,7 +106,7 @@ export const edit = ( props ) => {
 			<form
 				key={ 'form-link' }
 				onSubmit={ ( event ) => event.preventDefault() }
-				className={ `blocks-button_inline-link dgb-button-${textAlignment}`}>
+				className={ `blocks-button-inline-link dgb-button-${textAlignment}`}>
 				<Dashicon icon={ 'admin-links' } />
 				<URLInput
 					value={ url }

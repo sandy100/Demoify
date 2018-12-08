@@ -1,6 +1,6 @@
 {
 	"name": "demoify",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Demoify is a collection of content blocks for the new block based WordPress editor Gutenberg. Building blocks give you more control to quickly create and launch any kind of site you want.",
 	"main": "block.js",
 	"scripts": {

@@ -9,7 +9,7 @@ const ExtractTextPlugin = require( 'extract-text-webpack-plugin' );
 
 // Extract style.css for both editor and frontend styles.
 const blocksCSSPlugin = new ExtractTextPlugin( {
-	filename: './dist/blocks.style.build.css',
+	filename: './dist/blocks.frontend.build.css',
 } );
 
 // Extract editor.css for editor styles.

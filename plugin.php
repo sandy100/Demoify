@@ -26,9 +26,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
 */
 
-if ( ! defined( 'DEMOIFY_VERSION' ) ) {
-	define( 'DEMOIFY_VERSION', '1.0.0' );
-}
+defined( 'DEMOIFY_VERSION' ) || define( 'DEMOIFY_VERSION', '1.0.1' );
+defined( 'DEMOIFY_FILE' ) || define( 'DEMOIFY_FILE', __FILE__ );
 
 if ( ! defined( 'DEMOIFY_NAME' ) ) {
 	define( 'DEMOIFY_NAME', trim( dirname( plugin_basename( __FILE__ ) ), '/' ) );

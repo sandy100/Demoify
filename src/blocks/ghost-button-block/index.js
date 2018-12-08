@@ -56,14 +56,14 @@ export const edit = ( props ) => {
 		),
 
 		<span key={ 'button' }
-			className={ `wp-block-button dgb-button-${textAlignment}` }>
+			className={ `wp-block-button dgb-ghost-button dgb-button-${textAlignment}` }>
 			<RichText
 				tagName={ 'span' }
 				placeholder={ __( 'Enter Text' ) }
 				value={ text }
 				onChange={ (text) => setAttributes( { text: text } ) }
 				formattingControls={ [ 'bold', 'italic', 'strikethrough' ] }
-				className={`wp-dgb-button dgb-button-${size} dgb-ghost-button`}
+				className={`wp-dgb-button dgb-ghost-button dgb-button-${size}`}
 				style={ {
 					borderColor: color,
 					color: color,
@@ -119,7 +119,7 @@ export const edit = ( props ) => {
 			<form
 				key={ 'form-link' }
 				onSubmit={ ( event ) => event.preventDefault() }
-				className={ `blocks-button_inline-link dgb-button-${textAlignment}`}>
+				className={ `blocks-button-inline-link dgb-button-${textAlignment}`}>
 				<Dashicon icon={ 'admin-links' } />
 				<URLInput
 					value={ url }
@@ -198,6 +198,7 @@ registerBlockType( 'dgb/ghost-button', {
 		},
 		color: {
 			type: 'string',
+			default: '#2091e1',
 		},
 		textColor: {
 			type: 'string',

@@ -69,11 +69,11 @@ export const edit = ( props ) => {
 				}
 				<RichText
 					tagName="p"
-					placeholder={ props.attributes.text.default }
+					placeholder={ text.default }
 					value={ text }
 					isSelected={ isSelected && editable === 'content' }
 					onFocus={ onSetActiveEditable( 'content' ) }
-					onChange={ ( text ) => setAttributes( { text: text } ) }
+					onChange={ () => setAttributes( { text: text } ) }
 					className={ `dgb-alert-msg type-${ alertType }` }
 					style={ {
 						backgroundColor: color,
@@ -198,7 +198,7 @@ registerBlockType( 'dgb/alert-msg', {
 			type: 'array',
 			source: 'children',
 			selector: 'p',
-			default: __( 'Alerts are available for any length of text, as well as an optional dismiss button. For proper styling, use one of the options available or make your custom.' ),
+			default: __( 'Alerts are available for any length of the text, as well as an optional dismiss button. For proper styling, use one of the options available or make your custom.' ),
 		},
 		color: {
 			type: 'string',

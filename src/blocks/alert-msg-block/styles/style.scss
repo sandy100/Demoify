@@ -62,9 +62,11 @@
 	}
 
 	p {
-		padding: 1.2rem;
-		border-radius: 4px;
-		margin: 0;
+		&.dgb-alert-msg {
+			padding: 1.2rem;
+			border-radius: 4px;
+			margin: 0;
+		}
 	}
 }
 
